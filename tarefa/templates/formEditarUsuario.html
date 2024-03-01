@@ -1,8 +1,0 @@
-<form method="post" action="/tarefas/editarUsuario/{{usuario.id}}">
-    {% csrf_token %}
-    <label for="nome">Nome</label>
-    <input type="text" name="nome" id="nome" value="{{usuario.nome}}"><br>
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email" value="{{usuario.email}}">
-    <input type="submit" name="salvar">
-</form>
